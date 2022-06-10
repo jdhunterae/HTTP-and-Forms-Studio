@@ -1,19 +1,65 @@
 <!doctype html>
+<html lang="en">
 
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
-	<script>
-		// TODO: create a handler
-    window.addEventListener("load", function(){
-        // TODO: register the handler
-    });
-	</script>
+
+	<title>HTTP and Forms Studio</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="style.css" /> -->
 </head>
 
-<body>
+<body class="bg-light">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 order-md-1">
+				<h4 class="mb-3">HTTP and Forms Studio</h4>
+				<form id="searchForm" class="needs-validation">
 
-	<form id="searchForm">
-    <!-- TODO: add form elements -->
-	</form>
+					<div class="row">
+						<div class="col-md-10">
+							<label for="q">Search Terms</label>
+							<input class="form-control" type="text" name="q" id="q" placeholder"search terms..."
+								value="" required />
+						</div>
+					</div>
 
+					<div class="row">
+						<div class="form-check col-md-2">
+							<input class="form-check-input" type="radio" name="engine" id="engineGoogle" value="google"
+								required />
+							<label class="form-check-label" for="engineGoogle">Google</label>
+						</div>
+						<div class="form-check col-md-3">
+							<input class="form-check-input" type="radio" name="engine" id="engineDuck"
+								value="duckDuckGo" required />
+							<label class="form-check-label" for="engineDuck">DuckDuckGo</label>
+						</div>
+						<div class="form-check col-md-2">
+							<input class="form-check-input" type="radio" name="engine" id="engineBing" value="bing"
+								required />
+							<label class="form-check-label" for="engineBing">Bing</label>
+						</div>
+						<div class="form-check col-md-2">
+							<input class="form-check-input" type="radio" name="engine" id="engineAsk" value="ask"
+								required />
+							<label class="form-check-label" for="engineAsk">Ask</label>
+						</div>
+					</div>
+					<hr class="mb-h4">
+					<button class="btn btn-primary btn-lg btn-block" type="submit" name="go" id="go"
+						value="Go!">Go!</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+		crossorigin="anonymous"></script>
+	<script src="scripts.js"></script>
 </body>
+
+</html>
